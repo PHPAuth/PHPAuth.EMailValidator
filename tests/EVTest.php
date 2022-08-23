@@ -9,7 +9,7 @@ class EVTest extends TestCase
     public static function setUpBeforeClass()
     {
         require_once __DIR__ . '/../vendor/autoload.php';
-        self::$validator = new \PHPAuth\EmailValidator();
+        self::$validator = new \PHPAuth\EMailValidator();
     }
 
     public function testEmails()

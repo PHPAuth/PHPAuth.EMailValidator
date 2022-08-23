@@ -5,7 +5,7 @@ namespace PHPAuth;
 use Exception;
 use stdClass;
 
-class EmailValidator implements EmailValidatorInterface
+class EMailValidator implements EmailValidatorInterface
 {
     /**
      * @var array

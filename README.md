@@ -12,7 +12,7 @@ require_once __DIR__ . '/path/to/vendor/autoload.php';
 $config = new \PHPAuth\Config($pdo);
 
 $config = $config->setEMailValidator(static function ($email) {
-    return \PHPAuth\EmailValidator::isValid($email);
+    return \PHPAuth\EMailValidator::isValid($email);
 });
 ```
 
@@ -29,8 +29,8 @@ $l = [
 ];
 
 foreach ($l as $e) {
-    var_dump(\PHPAuth\EmailValidator::check($e)->state);
-    echo "{$e} ==> " . ( \PHPAuth\EmailValidator::isValid($e) ? 'VALID' : 'INVALID' ) . PHP_EOL;
+    var_dump(\PHPAuth\EMailValidator::check($e)->state);
+    echo "{$e} ==> " . ( \PHPAuth\EMailValidator::isValid($e) ? 'VALID' : 'INVALID' ) . PHP_EOL;
 }
 
 ```
