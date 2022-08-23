@@ -1,0 +1,24 @@
+{
+    "name": "phpauth/phpauth.email-validator",
+    "description": "PHPAuth E-Mail Validator",
+    "homepage": "https://phpauth.github.io/PHPAuth/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karel Wintersky",
+            "email": "karel.wintersky@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPAuth\\": "src/"
+        }
+    }
+}
